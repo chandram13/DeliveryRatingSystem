@@ -9,6 +9,14 @@ def orderQuality(deliveryTime,speed):
     orderFormula = deliveryTime * speed
     print(orderFormula)
 
+def ratingSystem(deliveryTime,speed,customerRank):
+    if speed >= 65:
+        print("The order is one star because the order didn't arrive on time.")
+    if speed < 65:
+        print("The order is five stars because the order delivery is fast.")
+    findRate = deliveryTime * speed + customerRank
+    print(findRate)
 
     orderQuality(30,65)
     orderQuality(60,80)
+    ratingSystem((41,65,20))
